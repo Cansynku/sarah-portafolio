@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio de Sarah Garcia Francés</title>
+
+    <!-- Enlace a archivo CSS personalizado -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Enlace a los iconos de Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- Enlace al favicon -->
+    <link rel="icon" href="img/S.jpg" type="image/x-icon" />
+  </head>
+
+  <body>
+    <!-- Header: Contiene la imagen de perfil y la información principal -->
+    <header>
+      <div class="header-content">
+        <!-- Imagen de perfil -->
+        <img
+          src="img/foto_perfil.jpg"
+          alt="Sarah Garcia Francés"
+          class="profile-picture"
+        />
+
+        <!-- Información personal en el header -->
+        <div class="header-info">
+          <h1><span>Sarah Garcia Francés</span></h1>
+          <p>🌟 Documentalista Audiovisual & Gestora de Contenidos 🎬</p>
+        </div>
+      </div>
+
+      <!-- Menú de navegación con enlaces a cada sección -->
+      <nav>
+        <ul>
+          <li>
+            <a href="#sobre-mi" class="icono-interactivo">
+              <i class="fas fa-id-card"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#portafolio" class="icono-interactivo">
+              <i class="fas fa-briefcase"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#experiencia" class="icono-interactivo">
+              <i class="fas fa-history"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#contacto" class="icono-interactivo">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Sección "Sobre mí" -->
+    <section id="sobre-mi" class="seccion activa">
+      <h2 onclick="toggleSection(this)">
+        <i class="fas fa-id-card"></i> Sobre mí
+      </h2>
+      <div class="contenido-seccion">
+        <p>
+          Soy una apasionada del archivo multimedia y la gestión de contenidos
+          audiovisuales, con experiencia en Antena3. Mi trabajo consiste en
+          conservar, organizar y gestionar materiales audiovisuales de manera
+          eficiente y creativa.
+        </p>
+
+        <!-- Botón para descargar el CV -->
+        <a
+          href="docs/cv_sarah_garcia_frances.pdf"
+          class="boton-cv"
+          download="Sarah_Garcia_CV.pdf"
+        >
+          Descargar CV
+        </a>
+
+        <!-- Imagen de perfil -->
+        <img
+          src="img/sarah.jpg"
+          alt="Foto de Sarah Garcia Francés"
+          class="perfil-imagen"
+        />
+      </div>
+    </section>
+
+    <!-- Sección "Portafolio" -->
+    <section id="portafolio" class="seccion">
+      <h2 onclick="toggleSection(this)">
+        <i class="fas fa-briefcase"></i> Portafolio
+      </h2>
+      <div class="contenido-seccion">
+        <div class="contenedor-tarjetas">
+          <div class="project-card">
+            <h3><i class="fas fa-folder-open"></i> Proyecto A</h3>
+            <p>Breve descripción del proyecto o logro.</p>
+          </div>
+          <div class="project-card">
+            <h3><i class="fas fa-folder-open"></i> Proyecto B</h3>
+            <p>Breve descripción del proyecto o logro.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección "Experiencia" -->
+    <section id="experiencia" class="seccion">
+      <h2 onclick="toggleSection(this)">
+        <i class="fas fa-history"></i> Experiencia
+      </h2>
+      <div class="contenido-seccion">
+        <ul class="lista-experiencia">
+          <!-- Experiencia 1 -->
+          <li>
+            <div class="info-puesto">
+              <h3>Documentalista</h3>
+              <p class="empresa"><strong>Antena 3</strong></p>
+              <p class="periodo">feb. 2019 - actualidad · 5 años 9 meses</p>
+            </div>
+          </li>
+
+          <!-- Experiencia 2 -->
+          <li>
+            <div class="info-puesto">
+              <h3>Documentalista</h3>
+              <p class="empresa"><strong>Antena 3</strong></p>
+              <p class="periodo">oct. 2018 - ene. 2019 · 4 meses</p>
+            </div>
+          </li>
+
+          <!-- Experiencia 3 -->
+          <li>
+            <div class="info-puesto">
+              <h3>Voluntaria en eventos de baloncesto</h3>
+              <p class="empresa"><strong>Liga ACB</strong></p>
+              <p class="periodo">ene. 2019 - feb. 2022 · 3 años 2 meses</p>
+            </div>
+          </li>
+
+          <!-- Experiencia 4 -->
+          <li>
+            <div class="info-puesto">
+              <h3>
+                Voluntaria en eventos de la selección española de baloncesto
+              </h3>
+              <p class="empresa"><strong>FEB Voluntarios</strong></p>
+              <p class="periodo">ago. 2017 - feb. 2022 · 4 años 7 meses</p>
+            </div>
+          </li>
+
+          <!-- Experiencia 5 -->
+          <li>
+            <div class="info-puesto">
+              <h3>Documentalista</h3>
+              <p class="empresa"><strong>Casa América</strong></p>
+              <p class="periodo">jul. 2018 - sept. 2018 · 3 meses</p>
+            </div>
+          </li>
+
+          <!-- Experiencia 6 -->
+          <li>
+            <div class="info-puesto">
+              <h3>Auxiliar administrativo</h3>
+              <p class="empresa"><strong>Mediaset España</strong></p>
+              <p class="periodo">abr. 2018 - jul. 2018 · 4 meses</p>
+            </div>
+          </li>
+
+          <!-- Experiencia 7 -->
+          <li>
+            <div class="info-puesto">
+              <h3>Documentalista</h3>
+              <p class="empresa">
+                <strong>Mediaset España Comunicación SA</strong>
+              </p>
+              <p class="periodo">jul. 2017 - may. 2018 · 11 meses</p>
+            </div>
+          </li>
+
+          <!-- Experiencia 8 -->
+          <li>
+            <div class="info-puesto">
+              <h3>Documentalista</h3>
+              <p class="empresa">
+                <strong>Madrid y alrededores, España</strong>
+              </p>
+              <p class="periodo">jul. 2017 - abr. 2018 · 10 meses</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Sección "Contacto" Mejorada -->
+    <section id="contacto" class="seccion">
+      <h2 onclick="toggleSection(this)">
+        <i class="fas fa-envelope"></i> Contacto
+      </h2>
+      <div class="contenido-seccion">
+        <!-- Información de Contacto Directo -->
+        <p><i class="fas fa-envelope"></i> sarah.garcia@example.com</p>
+        <p><i class="fas fa-phone-alt"></i> +34 123 456 789</p>
+        <p><i class="fas fa-map-marker-alt"></i> Madrid, España</p>
+      </div>
+    </section>
+    <!-- Botón de subir al inicio -->
+    <button id="scrollTopBtn" onclick="scrollToTop()" class="boton-subir">
+      <i class="fas fa-arrow-up"></i>
+      <!-- Ícono de flecha hacia arriba -->
+    </button>
+
+    <!-- Footer: Información de contacto y redes sociales -->
+    <footer>
+      <hr class="footer-line" />
+      <div class="social-media">
+        <!-- Iconos de redes sociales con enlaces externos -->
+        <a
+          href="https://www.linkedin.com/in/sarah-garcia-franc%C3%A9s-427821141/"
+          target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a
+          href="https://www.tiktok.com/@sarahsaritaparalosamigos"
+          target="_blank"
+          ><i class="fab fa-tiktok"></i
+        ></a>
+        <a href="https://www.instagram.com/sh_saaraah/" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+      </div>
+      <p class="footer-message">
+        © 2024 Sarah Garcia Francés - "El esfuerzo continuo, incansable y
+        persistente ganará."
+      </p>
+    </footer>
+
+    <!-- Enlace al archivo JavaScript para efectos de apertura/cierre de secciones -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
